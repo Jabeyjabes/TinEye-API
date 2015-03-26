@@ -1,2 +1,2 @@
 # TinEye-API
-an API for TinEye
+an unofficial API for TinEye
