@@ -26,10 +26,11 @@ soup = BeautifulSoup(r.content)
 
 next_tag = soup.find(attrs={'class': 'next'})
 last_page = next_tag.previous_element
+last_page = int(last_page)
+last_page = last_page + 1
 
 try:
     while page_num < last_page:
-
         page_num_1 = '?page=%s&sort=score&order=desc' % page_num
         r = requests.get(url + search + identifier[4] + page_num_1)
         soup = BeautifulSoup(r.content)
