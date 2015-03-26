@@ -41,7 +41,7 @@ try:
                 print find_url
             except:
                 pass
-    page_num = page_num + 1
+        page_num = page_num + 1
 
 except:
     r = requests.get(full_url)
